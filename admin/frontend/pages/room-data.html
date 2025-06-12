@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Data - Sibayak Multi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+
+<body class="font-sans">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <sidebar-component></sidebar-component>
+
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 mt-6 bg-white">
+      <!-- Top Bar -->
+      <topbar-component title="Room Data"></topbar-component>
+
+      <!-- Guest Data -->
+      <div class="p-6">
+        <!-- Table -->
+        <div class="overflow-x-auto border">
+          <table class="min-w-full text-sm text-left bg-white rounded">
+            <thead>
+              <tr class="text-gray-600 border-b">
+                <th class="py-3 px-4 font-normal">Customer</th>
+                <th class="py-3 px-4 font-normal">Room No</th>
+                <th class="py-3 px-4 font-normal">Room Type</th>
+                <th class="py-3 px-4 font-normal">Rent</th>
+                <th class="py-3 px-4 font-normal">Status</th>
+              </tr>
+            </thead>
+            <tbody id="room-data-table">
+          
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

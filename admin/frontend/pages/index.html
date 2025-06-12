@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Sibayak Multi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+
+<body>
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <sidebar-component></sidebar-component>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 mt-6">
+      <!-- Top bar -->
+      <topbar-component title="Hotel Activities"></topbar-component>
+
+      <!-- Container -->
+      <div class="container bg-white p-6 rounded">
+        <!-- Cards -->
+        <div class="grid grid-cols-2 gap-4 mb-8 cards-container">
+
+        </div>
+
+        <!-- Top Selected Package -->
+        <h2 class="text-lg font-semibold mb-4">Top Selected Room</h2>
+        <div class="bg-white p-6 rounded shadow" id="top-room-bars-container">
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>

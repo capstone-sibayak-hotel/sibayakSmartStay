@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Hotel</title>
+    <!-- <link rel="stylesheet" href="../assets/styles/style.css"> -->
+    <script type="module">
+        import { requireLogin } from '../assets/components/auth.js';
+        requireLogin();
+    </script>
+    <style>
+        main {
+            padding-top: 80px; 
+            min-height: calc(100vh - 80px); 
+        }
+    </style>
+</head>
+<body>  
+    <header-component></header-component>
+
+    <main>
+        <booking-component></booking-component>
+    </main>
+
+    <footer-component></footer-component>
+
+    <script>
+        // Menangani event booking
+        document.addEventListener('booking-submitted', (e) => {
+            const bookingData = e.detail;
+            console.log('Booking data:', bookingData);
+
+        });
+    </script>
+</body>
+</html> 

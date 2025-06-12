@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reservations - Sibayak Multi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/styles/styles.css">
+  <style>
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .custom-checkbox {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: none;
+      margin-right: 8px;
+      background-color: #ccc;
+      /* gray when unchecked */
+      position: relative;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .custom-checkbox:checked {
+      background-color: #4CAF50;
+      /* green when checked */
+    }
+
+    .custom-checkbox:checked::after {
+      content: ' ';
+      position: absolute;
+      color: white;
+      font-size: 16px;
+      left: 4px;
+      top: -1px;
+    }
+  </style>
+
+</head>
+
+
+<body class="bg-white font-sans">
+
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <sidebar-component></sidebar-component>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 mt-6">
+
+      <div id="adminNoRoomModal"
+        class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center hidden">
+        <div class="bg-white p-5 rounded-lg shadow-xl w-full max-w-md mx-auto">
+          <div class="text-center">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">No Suitable Rooms Found</h3>
+            <div class="mt-2 px-7 py-3">
+              <p class="text-sm text-gray-500">
+                No rooms matching the customer's request are currently available.
+              </p>
+              <p class="text-sm text-gray-500 mt-2">
+                How would you like to proceed for this customer?
+              </p>
+            </div>
+            <div class="items-center px-4 py-3">
+              <button id="adminContactCustomerWhatsAppBtn"
+                class="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 mb-2">
+                Contact Customer (WhatsApp)
+              </button>
+              <button id="adminCloseModalBtn"
+                class="mt-3 px-4 py-2 bg-gray-200 text-gray-800 text-base font-medium rounded-md w-full shadow-sm hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Top Bar -->
+      <topbar-component title="Reservation Data"></topbar-component>
+
+      <!-- Reservation Cards -->
+      <div class="grid grid-cols-2 gap-[3em] max-w-[800px]" id="reservation-container">
+
+        <!-- Card -->
+      </div>
+
+
+    </main>
+  </div>
+</body>
+
+</html>

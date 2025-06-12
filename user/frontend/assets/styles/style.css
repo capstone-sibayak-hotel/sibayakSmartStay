@@ -1,0 +1,403 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #7a6240;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.98rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #bfa16a;
+}
+
+.sign-in-btn{
+    background: #7a6240;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+
+.sign-in-btn:hover {
+    background: #bfa16a;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    top: 45%;
+    left: 40px;
+    color: #fff;
+    max-width: 420px;
+}
+
+.hero-content h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0 0 18px 0;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.home img{
+    margin-top: 70px;
+    width: 500px;
+    border-radius: 10px;
+}
+.part-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+    padding-top: 10px;
+    width: 1000px;
+    gap: 50px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 100px;
+}
+
+.description h2{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.description p{
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.part-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.room{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; 
+}
+
+.room img{
+    width: 400px;
+}
+
+.room-box{
+    height: 590px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room-info{
+    padding: 20px;
+    padding-top: 20px;
+}
+
+.room-info p{
+    padding-top: 10px;
+}
+
+.price{
+    font-size: 25px;
+}
+
+.booking{
+    width: 100px;
+    text-align: center;
+    background: #A17640;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.button{
+    padding-top: 30px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.booking:hover{
+    background-color: #5a4825;
+    color: white;
+}
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; 
+}
+
+.part-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.service-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.service-info{
+    width: 500px;
+    height: 545px;
+    padding: 20px;
+    padding-left: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-title span {
+    font-size: 20px;
+}
+
+.strive{
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.service-list{
+    list-style: none;
+}
+
+.service-list li{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.service-line {
+    height: 2px;
+    background-color: #5a4825;
+    width: 50px; 
+    margin-left: 10px; 
+}
+
+.service-title {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer {
+    background-color: #5a4825;
+    color: white;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #43361c;
+    margin-top: 20px;
+}
+
+html {
+    scroll-padding-top: 100px; /* adjust if your header height changes */
+}
+
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+    .home {
+        width: 95%;
+        gap: 24px;
+    }
+    .room img, .room-box {
+        width: 90vw;
+        max-width: 350px;
+    }
+    .service-info {
+        width: 90vw;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 20px;
+    }
+    .home {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 1rem 0.5rem;
+    }
+    .home img {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .description {
+        margin-top: 30px;
+    }
+    .room, .service {
+        gap: 16px;
+    }
+    .room img, .room-box, .service-info {
+        width: 100%;
+        max-width: 98vw;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 8px;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    nav {
+        gap: 12px;
+    }
+    .sign-in-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .hero-content h1 {
+        font-size: 1.3rem;
+    }
+    .hero-content {
+        left: 10px;
+        top: 30%;
+        max-width: 90vw;
+    }
+    .home {
+        padding: 0.5rem 0.2rem;
+        gap: 8px;
+    }
+    .description h2 {
+        font-size: 1rem;
+    }
+    .description p {
+        font-size: 0.95rem;
+    }
+    .room img, .room-box, .service-info {
+        width: 100%;
+        max-width: 98vw;
+    }
+    .footer {
+        padding: 16px 0;
+    }
+    .footer-logo h2 {
+        font-size: 1.1rem;
+    }
+}

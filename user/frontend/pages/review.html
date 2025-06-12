@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Hotel Booking</title>
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+</head>
+<body>
+    <header-component></header-component>
+
+    <main>
+        <section class="reviews-section">
+            <h1>Customer Reviews</h1>
+            <button id="writeReviewBtn" class="btn-primary">Write a Review</button>
+            <review-list-component></review-list-component>
+        </section>
+    </main>
+
+    <footer-component></footer-component>
+
+    <script>
+        document.getElementById('writeReviewBtn').addEventListener('click', () => {
+            const reviewComponent = document.createElement('review-component');
+            document.body.appendChild(reviewComponent);
+        });
+
+        // Refresh review list when a new review is submitted
+        document.addEventListener('review-submitted', () => {
+            const reviewList = document.querySelector('review-list-component');
+            reviewList.loadReviews();
+        });
+    </script>
+</body>
+</html> 
